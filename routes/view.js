@@ -7,3 +7,8 @@ const mongoose = require('mongoose');
 router.get('/', (req,res,next)=>{
    res.render('home');
 });
+
+router.get('/saved', (req,res,next)=>{
+   res.render('saved');
+});
+module.exports = router;
